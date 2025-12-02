@@ -5,4 +5,6 @@ export const environment = {
   companySlogan: 'The house of GIFs.',
 
   //Api Keys
+  apiKey: 'yHTFZ9TgMDkdlaNx64CQAy5et3v9YrUT',
+  giphyUrl: 'https://api.giphy.com/v1',
 };
