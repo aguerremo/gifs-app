@@ -19,6 +19,15 @@ export class GifsSideMenuOptions {
 
   gifService = inject(GifService)
 
+  getKey(){
+    const link = '/dashboard/search/'
+    const key = this.gifService.keySearchHistory()
+    const linkWithKey = link + key
+    console.log(linkWithKey)
+
+    return linkWithKey
+  }
+
 
   menuOptions:MenuOptions[] = [
     {

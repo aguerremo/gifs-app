@@ -59,6 +59,10 @@ export class GifService {
     //   console.log({search: gifs});
     // })
     }
+
+    getHistoryGifs( key: string) {
+      return this.searchHistory()[key] ?? []
+    }
   }
 
 

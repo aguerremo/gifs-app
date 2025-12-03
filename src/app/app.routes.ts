@@ -8,22 +8,27 @@ export const routes: Routes = [
         children: [
           {
             path: 'search',
-            loadComponent: () => import('./gifs/pages/search/search')
+            loadComponent: () => import('./gifs/pages/search/search'),
           },
+          {
+            path: 'history/:key',
+            loadComponent: () => import('./gifs/pages/search/search-history-page/search-history-page')
+          }
+            ,
           {
             path: 'trending',
             loadComponent: () => import('./gifs/pages/trending/trending')
           },
-          {
+            {
             path: '**',
             redirectTo: 'trending',
-          }
-        ]
-      },
+            }
+          ]
+        },
 
       {
         path: '**',
-        redirectTo: 'dashboadrd',
+        redirectTo: 'dashboard',
       }
 
 ];
